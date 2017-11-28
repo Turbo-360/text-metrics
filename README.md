@@ -54,7 +54,7 @@ The language parameter is used for proper removal of stopwords. If this paramete
 
 | lang 	| Language 					|
 |----	|------------------------	|
-| ar 	| Modern Standard Arabaic   |
+| ar 	| Modern Standard Arabic   |
 | bn 	| Bengali                	|
 | br 	| Brazilian Portuguese   	|
 | da 	| Danish                 	|
@@ -98,7 +98,7 @@ The JSON payload will contain the following information:
 | topTenWords       | A dictionary of the top 10 most frequent words in the text and each word's frequency |
 
 | Sentiment   |                                                    |
-|-------------|----------------------------------------------------|
+|-------------|-----------------------------------------------------------------------------------------|
 | score       | The AFINN-based sentiment score for the given text |
 | comparative | The AFINN-based comparative for the given text     |
 | positive    | A list of the positive words in the text           |
