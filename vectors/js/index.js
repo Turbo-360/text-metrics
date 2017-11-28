@@ -17,7 +17,6 @@ var sw = require('stopword');
 module.exports = {
 
 	metrics: (req, res) => {
-
 		const original = req.query.text;
 		if (original == null) {
 			res.json({
@@ -132,7 +131,6 @@ function isEmpty(str) {
 
 function deleteStopwords(text, lang) {
 	permitted = ['ar','bn','br','da','de','en','es','fa','fr','hi','it','ja','nl','no','pl','pt','ru','sv','zh']
-	console.log(lang)
 	if (permitted.indexOf(lang) === -1) {
 		lang = 'en';
 	}
