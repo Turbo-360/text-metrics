@@ -31,7 +31,7 @@ $ npm run build
 Text Metrics takes a block of text and returns various information about it including word frequencies, sentiment, and processed versions of the text. The base endpoint is:
 
 ```
-https://api.turbo360.co/vectors/image-transform-vn0vgw/transform
+https://production.turbo360-vector.com/text-metrics-nlugpj/metrics
 ```
 
 | Query        | Required           | Options  |
@@ -47,14 +47,14 @@ You should access this vector with a GET request if you only have a small amount
 Enter the language into the following endpoint as the 'lang' query parameter:
 
 ```
-https://api.turbo360.co/vectors/image-transform-vn0vgw/transform?lang=en&text=Hello, how are you doing today?
+https://production.turbo360-vector.com/text-metrics-nlugpj/metrics?lang=en&text=Hello, how are you doing today?
 ```
 
 The language parameter is used for proper removal of stopwords. If this parameter is omitted, it will default to English. The available languages are:
 
 | lang 	| Language 					|
 |----	|------------------------	|
-| ar 	| Modern Standard Arabaic   |
+| ar 	| Modern Standard Arabic   |
 | bn 	| Bengali                	|
 | br 	| Brazilian Portuguese   	|
 | da 	| Danish                 	|
@@ -81,7 +81,7 @@ Find text that you would like to be processed, or use a simple example such as "
 Enter the text into the following endpoint as the 'text' query parameter:
 
 ```
-https://api.turbo360.co/vectors/image-transform-vn0vgw/transform?lang=en&text=Hello, how are you doing today?
+https://production.turbo360-vector.com/text-metrics-nlugpj/metrics?lang=en&text=Hello, how are you doing today?
 ```
 
 #### JSON Payload
@@ -98,7 +98,7 @@ The JSON payload will contain the following information:
 | topTenWords       | A dictionary of the top 10 most frequent words in the text and each word's frequency |
 
 | Sentiment   |                                                    |
-|-------------|----------------------------------------------------|
+|-------------|-----------------------------------------------------------------------------------------|
 | score       | The AFINN-based sentiment score for the given text |
 | comparative | The AFINN-based comparative for the given text     |
 | positive    | A list of the positive words in the text           |
