@@ -36,7 +36,7 @@ https://production.turbo360-vector.com/text-metrics-nlugpj/metrics
 
 | Query        | Required           | Options  |
 | ------------- | ------------- | ----- |
-| text      | yes  | 
+| text      | yes  | any string
 | lang      | no | More information below
 
 ### Example 1 - GET Request
